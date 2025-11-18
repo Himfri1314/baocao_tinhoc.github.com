@@ -1,7 +1,4 @@
 <html>
-  <head>
-  	<meta charset = "utf-8">
-  </head>
   <body>
   	<div>
   		<h1>BÀI 7: HTML VÀ CẤU TRÚC TRANG WEB</h1>
