@@ -83,8 +83,14 @@
     <div class="container">
         <div class="card">
             <img src="sach.jpg" class="avatar">
+        </div>
+      <div class="card">
             <img src="game.jpg" class="avatar">
+      </div>
+      <div class="card">
             <img src="vẽ.jpg" class="avatar">
+      </div>
+      <div class="card">
             <img src="dianhac.jpg" class="avatar">
          </div>
       </div>
