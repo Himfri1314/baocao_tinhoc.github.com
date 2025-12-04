@@ -1,229 +1,71 @@
 <html lang="vi">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>PHƯƠNG DUYÊN</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<style>
-    body {
-        font-family: 'Poppins', sans-serif;
-        background: #f6f8fc;
-        margin: 0;
-    }
-    /* NAVBAR */
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 25px 60px;
-        background: white;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-    nav .menu {
-        display: flex;
-        gap: 50px;
-        font-weight: 600;
-    }
-    nav .auth button {
-        margin-left: 10px;
-        padding: 10px 20px;
-        border-radius: 25px;
-        border: none;
-        font-weight: 600;
-        cursor: pointer;
-    }
-    .login { background: #e6e7f2; }
-    .signup { background: #656bcb; color: white; }
-    /* BANNER */
-    .banner {
-        margin: 40px auto;
-        width: 80%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        background: white;
-        border-radius: 25px;
-        overflow: hidden;
-        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    }
-    .banner-left {
-        padding: 50px;
-        background: linear-gradient(135deg, #6d8ff0, #8fa9ff);
-        color: white;
-    }
-    .banner-left h1 {
-        font-size: 45px;
-        margin-bottom: 10px;
-    }
-    .banner-left p {
-        width: 80%;
-        opacity: 0.9;
-        line-height: 1.6;
-    }
-    .banner-left a {
-        display: inline-block;
-        margin-top: 25px;
-        padding: 12px 25px;
-        background: white;
-        color: #4b5cd4;
-        border-radius: 25px;
-        font-weight: 600;
-        text-decoration: none;
-    }
-    .banner-right img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    /* SECTION WRAPPER */
-    .section {
-        width: 80%;
-        margin: 40px auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-    /* ARTWORK */
-    .artwork {
-        width: 30%;
-    }
-    .artwork h2 {
-        font-size: 22px;
-        margin-bottom: 15px;
-    }
-    .art-list {
-        display: flex;
-        gap: 15px;
-    }
-    .art-item img {
-        width: 100px;
-        height: 130px;
-        border-radius: 15px;
-        object-fit: cover;
-    }
-    /* RECENT SEARCH */
-    .recent {
-        width: 30%;
-    }
-    .recent h2 {
-        margin-bottom: 15px;
-    }
-    .search-item {
-        margin-bottom: 10px;
-        background: white;
-        padding: 12px 15px;
-        border-radius: 15px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        box-shadow: 0 3px 12px rgba(0,0,0,0.05);
-    }
-    .search-item input {
-        border: none;
-        width: 100%;
-        outline: none;
-        font-size: 15px;
-    }
-    /* INFO TAGS */
-    .info-box {
-        width: 30%;
-    }
-    .tag {
-        display: flex;
-        gap: 15px;
-        padding: 18px;
-        border-radius: 20px;
-        background: white;
-        margin-bottom: 15px;
-        box-shadow: 0 3px 12px rgba(0,0,0,0.07);
-    }
-    .tag img {
-        width: 55px;
-        height: 55px;
-    }
-    .tag .title {
-        font-weight: 700;
-        font-size: 16px;
-    }
-    .tag p {
-        font-size: 14px;
-        opacity: 0.7;
-        line-height: 1.4;
-    }
+  <head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHƯƠNG DUYÊN</title>
+    <style>
+      body {
+        background-image: url('Đại diện.png');
+            background-size: cover;        /* Phủ toàn màn hình */
+            background-position: center;   /* Canh giữa ảnh */
+            background-repeat: no-repeat;  /* Không lặp lại */
+      }
+    </style>
+ <style>
+  .avatar {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #bcdcff;
+      margin-bottom: 10px;
+   }
+   full-center {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .full-center img {
+    width: 250px;
+  }
 </style>
-</head>
-
+<div class="card">
+        <img src="duyen.png" class="avatar">
 <body>
-<!-- NAV -->
-<nav>
-    <div class="menu">
-        <span>Home</span>
-        <span>Search</span>
-        <span>Message</span>
-    </div>
-    <div class="auth">
-        <button class="login">Log in</button>
-        <button class="signup">Sign up</button>
-    </div>
-</nav>
-<!-- BANNER -->
-<div class="banner">
-    <div class="banner-left">
-        <h1>Character Name</h1>
-        <p>Một đoạn mô tả ngắn gọn về nhân vật, nghề nghiệp hoặc tính cách. Bạn có thể thay nội dung tùy ý.</p>
-        <a href="#">Read More</a>
-    </div>
-    <div class="banner-right">
-        <img src="Đại diện.png" alt="Character Image">
-    </div>
-</div>
-<!-- SECTION -->
-<div class="section">
-    <!-- ARTWORK -->
-    <div class="artwork">
-        <h2>Artwork</h2>
-        <div class="art-list">
-            <div class="art-item"><img src="Dth.jpg"></div>
-            <div class="art-item"><img src="Subaru.jpg"></div>
-        </div>
-    </div>
-    <!-- RECENT SEARCH -->
-    <div class="recent">
-        <h2>Recent Search</h2>
-        <div class="search-item">
-            <input placeholder="Search 1">
-        </div>
-        <div class="search-item">
-            <input placeholder="Search 2">
-        </div>
-        <div class="search-item">
-            <input placeholder="Search 3">
-        </div>
-    </div>
-    <!-- INFO TAGS -->
-    <div class="info-box">
-        <div class="tag">
-            <img src="https://i.imgur.com/XC6J5aI.png">
-            <div>
-                <div class="title">Element</div>
-                <p>Một thuộc tính cơ bản hoặc mô tả ngắn.</p>
-            </div>
-        </div>
-        <div class="tag">
-            <img src="https://i.imgur.com/78lxwEw.png">
-            <div>
-                <div class="title">Region</div>
-                <p>Khu vực, bối cảnh hoặc nơi sinh sống của nhân vật.</p>
-            </div>
-        </div>
-        <div class="tag">
-            <img src="https://i.imgur.com/GiYlpNA.png">
-            <div>
-                <div class="title">Academy</div>
-                <p>Mô tả tổ chức hoặc nhóm liên quan.</p>
-            </div>
-        </div>
-    </div>
-</div>
-</body>
-</html>
+    <div class="background"></div>
+    <div class="container">
+        <div class="card">
+       <h1 style="text-align:center;text-decorating: none; color: white; padding: 0 50px;">NGUYỄN NGỌC PHƯƠNG DUYÊN</h1>
+         <div style="background-color: #9387AB; padding: 10px;"> 
+       <p style="text-align:center;text-decorating: none; color: white; padding: 0 10px;">Tôi không lười, chỉ là rất giỏi trong việc tiết kiệm năng lượng</p>
+         </div>
+<style>
+        /* Tiêu đề */
+.title {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #1a365f;
+}
+/* 4 thẻ */
+.container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+</style>
+         <body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="card">
+            <img src="sach.jpg" class="avatar">
+            <img src="game.jpg" class="avatar">
+            <img src="vẽ.jpg" class="avatar">
+            <img src="dianhac.jpg" class="avatar">
+         </div>
+      </div>
+  </style>
